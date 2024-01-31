@@ -1,0 +1,105 @@
+﻿<Window x:Class="EmployeeManagementSystem.Views.RegistrationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow"
+        Height="300"
+        Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0"
+              Background="#FF006BAE">
+            <StackPanel Margin="0,30,0,0">
+                <Image Height="100"
+                       Source="/Assets/manager.png"
+                       Stretch="Fill"
+                       Width="100" />
+                <Label Content="Employee Management"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,0"
+                       VerticalAlignment="Top"
+                       Foreground="White"
+                       FontFamily="Tahoma"
+                       FontSize="14" />
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Bottom"
+                        Margin="0,0,0,10">
+                <Label Content="Login to your Account"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,0"
+                       VerticalAlignment="Top"
+                       FontSize="9"
+                       FontFamily="Tahoma"
+                       Foreground="White" />
+                <Button Content="SIGN IN"
+                        Background="#FF003E65"
+                        Height="25"
+                        Width="150"
+                        FontFamily="Arial Rounded MT Bold"
+                        FontSize="9"
+                        Foreground="White"
+                        Margin="0,0,0,0" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1"
+              Background="White">
+            <Label Content="X"
+                   HorizontalAlignment="Right"
+                   Margin="0,5,5,0"
+                   VerticalAlignment="Top"
+                   FontFamily="Tahoma" />
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="10,0,10,0">
+                <Label Content="Create Account"
+                       HorizontalAlignment="Left"
+                       Padding="0"
+                       Margin="0,0,0,20"
+                       VerticalAlignment="Top"
+                       FontFamily="Arial Rounded MT Bold"
+                       FontSize="14" />
+                <Label Content="Username:"
+                       HorizontalAlignment="Left"
+                       Padding="0" />
+                <TextBox Width="200"
+                         Height="25"
+                         FontSize="11"
+                         FontFamily="Tahoma" />
+                <Label Content="Password:"
+                       HorizontalAlignment="Left"
+                       Padding="0"
+                       Margin="0,10,0,0" />
+                <TextBox Width="200"
+                         Height="25"
+                         FontSize="11"
+                         FontFamily="Tahoma" />
+                <CheckBox Content="Show Password"
+                          HorizontalAlignment="Right"
+                          Margin="0,5,0,0"
+                          FontFamily="Tahoma"
+                          FontSize="9"
+                          VerticalContentAlignment="Center" />
+                <Button Content="SIGNUP"
+                        Background="#FF003E65"
+                        HorizontalAlignment="Left"
+                        Margin="10,10,0,0"
+                        VerticalAlignment="Top"
+                        FontFamily="Arial Rounded MT Bold"
+                        FontSize="10"
+                        Height="25"
+                        Width="60"
+                        Foreground="White" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,161 @@
+﻿<Window x:Class="EmployeeManagementSystem.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:components="clr-namespace:EmployeeManagementSystem.Components"
+        mc:Ignorable="d"
+        Title="MainView"
+        Height="600"
+        Width="1100">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Height="50"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Stretch="UniformToFill"
+                   HorizontalAlignment="Stretch"
+                   Fill="#FF006BAE" />
+
+        <Label Content="Employee Management System"
+               Foreground="White"
+               FontFamily="Tahoma"
+               FontSize="14"
+               VerticalContentAlignment="Center"
+               Margin="5,0,0,0" />
+
+        <Rectangle HorizontalAlignment="Left"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Fill="#FF006BAE"
+                   VerticalAlignment="Stretch"
+                   Stretch="UniformToFill" />
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalAlignment="Top">
+            <Image Height="100"
+                   Width="100"
+                   Source="/Assets/employee.png"
+                   Margin="0,50,0,0" />
+            <Label Content="Welcome, User"
+                   Foreground="White"
+                   FontFamily="Tahoma"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,50" />
+            <Button HorizontalAlignment="Center"
+                    Height="40"
+                    Width="200"
+                    Grid.Row="1"
+                    FontFamily="Arial Rounded MT Bold"
+                    Background="#FF006BAE"
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    Margin="6,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="160" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="/Assets/dashboard-128.png"
+                           Stretch="Fill"
+                           Height="30"
+                           Width="30" />
+                    <Label Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           HorizontalAlignment="Center"
+                           Content="DASHBOARD"
+                           Foreground="White"
+                           VerticalAlignment="Center" />
+                </Grid>
+            </Button>
+            <Button HorizontalAlignment="Center"
+                    Height="40"
+                    Width="200"
+                    Grid.Row="1"
+                    FontFamily="Arial Rounded MT Bold"
+                    Background="#FF006BAE"
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    Margin="6,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="160" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="/Assets/add-user-128.png"
+                           Stretch="Fill"
+                           Height="30"
+                           Width="30" />
+                    <Label Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           HorizontalAlignment="Center"
+                           Content="ADD EMPLOYEE"
+                           Foreground="White"
+                           VerticalAlignment="Center" />
+                </Grid>
+            </Button>
+            <Button HorizontalAlignment="Center"
+                    Height="40"
+                    Width="200"
+                    Grid.Row="1"
+                    FontFamily="Arial Rounded MT Bold"
+                    Background="#FF006BAE"
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    Margin="6,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="160" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           Source="/Assets/banknotes-128.png"
+                           Stretch="Fill"
+                           Height="30"
+                           Width="30" />
+                    <Label Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           HorizontalAlignment="Center"
+                           Content="SALARY"
+                           Foreground="White"
+                           VerticalAlignment="Center" />
+                </Grid>
+            </Button>
+        </StackPanel>
+        <Button HorizontalAlignment="Left"
+                Margin="15,0,0,15"
+                Grid.Row="1"
+                VerticalAlignment="Bottom"
+                Background="{x:Null}"
+                BorderBrush="{x:Null}"
+                Foreground="{x:Null}">
+            <StackPanel Orientation="Horizontal">
+                <Image Grid.Column="0"
+                       Source="/Assets/logout-128.png"
+                       Stretch="Fill"
+                       Height="30"
+                       Width="30" />
+                <Label Content="Sign Out"
+                       Foreground="White"
+                       FontFamily="Tahoma"
+                       VerticalAlignment="Center" />
+            </StackPanel>
+        </Button>
+
+        <components:MainViewLayout Grid.Row="1" Grid.Column="1" />
+    </Grid>
+</Window>
