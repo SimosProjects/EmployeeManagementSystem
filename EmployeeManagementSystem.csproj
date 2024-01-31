@@ -18,4 +18,10 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Views\AddEmployeeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
